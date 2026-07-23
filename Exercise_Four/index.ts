@@ -24,5 +24,5 @@ const valueUser: userInfo = {
 
 valueUser.title = "software engineer";
 console.log(valueUser);
-valueUser.isbn = "7692346";  //this will cause issue
+//valueUser.isbn = "7692346";  //this will cause issue
 console.log(valueUser);

@@ -1,14 +1,13 @@
 import useNumberLocalStorage from "./Hooks/UseNumberStorage";
 import useSettingStorage from "./Hooks/UseSettingStorage";
 
-
 function App() {
   const [score, setScore] = useNumberLocalStorage("score", 300);
 
-const [settings, setSettings] = useSettingStorage("setting", {
-  language: "English",
-  notifications: true,
-});
+  const [settings, setSettings] = useSettingStorage("setting", {
+    language: "English",
+    notifications: true,
+  });
   return (
     <>
       <div>

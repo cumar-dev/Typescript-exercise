@@ -2,7 +2,7 @@ import { useEffect, useState } from "react";
 
 function useNumberLocalStorage(
   key: string,
-  initialValue: number
+  initialValue: number,
 ): [number, (value: number) => void] {
   const [value, setValue] = useState<number>(() => {
     const stored = localStorage.getItem(key);

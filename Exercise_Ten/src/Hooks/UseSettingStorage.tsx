@@ -7,7 +7,7 @@ interface User {
 
 function useSettingStorage(
   key: string,
-  initialValue: User
+  initialValue: User,
 ): [User, (value: User) => void] {
   const [value, setValue] = useState<User>(() => {
     const stored = localStorage.getItem(key);
